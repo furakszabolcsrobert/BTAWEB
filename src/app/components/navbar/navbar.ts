@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy, OnInit, Output} from '@angular/core';
+import { Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {  ActivatedRoute, RouterLink, RouterLinkActive } from "@angular/router";
 import { InventoryService } from '../../services/inventory-service';
 
@@ -26,7 +26,7 @@ export class Navbar implements OnInit, OnDestroy{
   client_id = "xyza7891tWfJEAorLEh2mGjYcBVbuari"
   loginEpicGames(){
     if (typeof window !== 'undefined') {
-      window.open(`https://www.epicgames.com/id/authorize?response_type=code&client_id=${this.client_id}&redirect_uri=${encodeURIComponent('http://localhost:4200')}`, `EpicLogin`, `width=500, height=600`)
+      window.open(`https://www.epicgames.com/id/authorize?response_type=code&client_id=${this.client_id}&redirect_uri=${encodeURIComponent('https://btaweb.vercel.app')}`, `EpicLogin`, `width=500, height=600`)
     }
   }
 
