@@ -25,7 +25,7 @@
     <a class=" w-[90px] text-white transition-all duration-100 py-2" routerLink="/download" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Download</a>
     <a class=" w-[90px] align-center text-white transition-all duration-100 py-2 " routerLink="/inventory" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Inventory</a>
     <button  class="btn_login w-[100px] h-[50px] align-center bg-black text-white border-b-2 border-white-600 my-4"> 
-        <div class="flex">
+        <div class="flex" (click)="loginEpicGames()">
             <img src="/menu_icons/EpicGames_logo.png" alt="EpicGames"/>
             <div class=" w-[50%]">
                 <a>

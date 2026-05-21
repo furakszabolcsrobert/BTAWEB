@@ -64,7 +64,4 @@ export class Navbar implements OnInit, OnDestroy{
     }
   }
 
-  asd123(){
-  }
-
 }

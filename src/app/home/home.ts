@@ -1,6 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { InventoryService } from '../services/inventory-service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -25,5 +23,6 @@ export class Home {
       window.open(this.sajttortaRoute, '_self');
     }
   }
+
 }
 
